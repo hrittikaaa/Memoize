@@ -1,0 +1,13 @@
+{
+  "name": "memoize",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev:api": "npm run dev -w apps/api",
+    "test:api": "npm run test -w apps/api",
+    "build": "npm run build -w packages/shared && npm run build -w apps/api"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  }
+}
